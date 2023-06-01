@@ -11,3 +11,5 @@ WARNING: This will permanently overwrite your file. I suggest you save a copy be
 Run the exe and you will get a list of files. Enter the corresponding # to convert.
 
 Hit enter and in about .2 seconds the file will convert all the "&G" color codes to their appropriate forum codes. You will need to delete the first [/color] code. 
+
+https://www.virustotal.com/gui/file/baff7490d3d3a1088faf8486289debb593c3b749bbad84873398fdfea703a455/detection
