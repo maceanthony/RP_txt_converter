@@ -62,14 +62,13 @@ def convert_color_codes():
     with open(filename, 'w', encoding='utf-8-sig') as file:
         file.write(content)
 
-    with open(filename, 'a') as file:
-        file.write('[/color]')
-
     updated_content = content.replace("[/color]", "", 1)
 
     with open(filename, 'w') as file:
         file.write(updated_content)
 
+    with open(filename, 'a') as file:
+        file.write('[/color]')
 
     print(f"Color codes have been converted in the file: {filename}")
 
