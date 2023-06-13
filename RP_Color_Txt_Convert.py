@@ -13,6 +13,7 @@ def convert_color_codes():
         return
 
     # Prompt the user to choose a file
+    print("!!!WARNING!!! This will overwrite your current file irreversibly.")
     print("Text files found in the current directory:")
     for i, file in enumerate(text_files):
         print(f"{i+1}. {file}")
@@ -26,6 +27,7 @@ def convert_color_codes():
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
+    global filename
     filename = text_files[choice - 1]
 
     # Read the content of the chosen text file
@@ -60,7 +62,17 @@ def convert_color_codes():
     with open(filename, 'w', encoding='utf-8-sig') as file:
         file.write(content)
 
+    with open(filename, 'a') as file:
+        file.write('[/color]')
+
+    updated_content = content.replace("[/color]", "", 1)
+
+    with open(filename, 'w') as file:
+        file.write(updated_content)
+
+
     print(f"Color codes have been converted in the file: {filename}")
+
 
 # Call the function to perform the conversion
 convert_color_codes()
