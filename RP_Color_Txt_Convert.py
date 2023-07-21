@@ -36,22 +36,30 @@ def convert_color_codes():
 
     # Define the color code mappings
     color_codes = {
-        '&x': '[/color][color=#000000]',
-        '&r': '[/color][color=#800000]',
-        '&g': '[/color][color=#008000]',
-        '&O': '[/color][color=#808000]',
-        '&b': '[/color][color=#1A1AFA]',
-        '&p': '[/color][color=#800080]',
-        '&c': '[/color][color=#008080]',
-        '&w': '[/color][color=#C0C0C0]',
-        '&z': '[/color][color=#808080]',
-        '&R': '[/color][color=#FF0000]',
-        '&G': '[/color][color=#00FF00]',
-        '&Y': '[/color][color=#FFFF00]',
-        '&B': '[/color][color=#0042FF]',
-        '&P': '[/color][color=#FF00FF]',
-        '&C': '[/color][color=#00FFFF]',
-        '&W': '[/color][color=#FFFFFF]'
+        '&x': '[/color][color=#000000]', #black
+        '&z': '[/color][color=#808080]', #dgrey
+        '&w': '[/color][color=#C0C0C0]', #grey
+        '&W': '[/color][color=#FFFFFF]', #white
+        '&P': '[/color][color=#FF00FF]', #pink
+        '&V': '[/color][color=#AF5FAF]', #violet blue
+        '&R': '[/color][color=#FF0000]', #red
+        '&v': '[/color][color=#AF005F]', #dark magenta
+        '&p': '[/color][color=#800080]', #dark pink
+        '&r': '[/color][color=#800000]', #red
+        '&o': '[/color][color=#AF5F00]', #brown
+        '&O': '[/color][color=#FFAF00]', #orange
+        '&y': '[/color][color=#AFAF00]', #gold
+        '&Y': '[/color][color=#FFFF00]', #yellow
+        '&g': '[/color][color=#008000]', #dgreen
+        '&n': '[/color][color=#5FAF00]', #chartreuse
+        '&G': '[/color][color=#00FF00]', #green
+        '&N': '[/color][color=#00FFAF]', #aqua
+        '&C': '[/color][color=#00FFFF]', #cyan
+        '&c': '[/color][color=#008080]', #dcyan
+        '&h': '[/color][color=#008787]', #cadet blue
+        '&H': '[/color][color=#5F87FF]', #cornflower blue
+        '&b': '[/color][color=#0000FF]', #dark blue
+        '&B': '[/color][color=#0000AF]', #even darker blue
     }
 
     # Replace the color code sequences
